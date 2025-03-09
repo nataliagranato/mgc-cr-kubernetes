@@ -79,3 +79,17 @@ kubectl create secret docker-registry magalu-registry-secret \
 ```sh
 kubectl apply -f .
 ```
+
+## 11. Acessando a aplicação
+
+```sh
+kubectl port-forward svc/fastapi 8000:8000
+```
+
+### Referências
+
+- [Guia Detalhado: Criar e Enviar Imagens Docker para o Magalu Cloud Container Registry (MCR)](https://docs.magalu.cloud/docs/containers-manager/container-registry/tutorials/create-send-docker-images)
+- [Docker](https://docs.docker.com/)
+- [Kubernetes](https://kubernetes.io/docs/home/)
+- [Kind](https://kind.sigs.k8s.io/)
+- [FastAPI](https://fastapi.tiangolo.com/)
