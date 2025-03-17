@@ -77,7 +77,7 @@ kubectl create secret docker-registry magalu-registry-secret \
 ## 10. Aplicando os manifestos e acessando a aplicação
 
 ```sh
-kubectl apply -f .
+kubectl apply -f k8s/
 ```
 
 ## 11. Acessando a aplicação
