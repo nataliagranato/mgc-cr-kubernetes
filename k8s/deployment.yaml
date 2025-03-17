@@ -12,9 +12,12 @@ spec:
       labels:
         app: fastapi
     spec:
+      imagePullSecrets:
+        - name: magalu-registry-secret # O deployment precisa ter acesso ao registry para baixar a imagem. Informe o nome do secret criado para integrar com o registry.
       containers:
         - name: fastapi
-          image: your-dockerhub-username/fastapi:latest
+          image: container-registry.br-se1.magalu.cloud/nataliagranato.xyz/fastapi:v1.0.0 # Informe o endereço da imagem no registry
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5000
           resources:

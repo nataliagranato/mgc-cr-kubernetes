@@ -68,7 +68,7 @@ docker push container-registry.br-se1.magalu.cloud/nataliagranato.xyz/fastapi:v1
 
 ```sh
 kubectl create secret docker-registry magalu-registry-secret \
-    --docker-server=<url-do-seu-registro> \
+    --docker-server=https://container-registry.br-se1.magalu.cloud/nataliagranato.xyz \
     --docker-username=<seu-nome-de-usuario> \
     --docker-password=<sua-senha> \
     --docker-email=<seu-email>
